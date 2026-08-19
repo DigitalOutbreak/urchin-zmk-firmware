@@ -85,6 +85,19 @@
 			key-positions = <30 31>;
 			bindings = <&mo SETTINGS>;
 		};
+		// J + K -> Escape. "jk" is not a digraph in English, so this can't
+		// collide with normal typing. timeout-ms is the only delay a lone J
+		// ever sees (45ms, vs the 1000ms a vim inoremap would cost), and
+		// require-prior-idle-ms disables the combo entirely mid-word, so
+		// there is no delay at all while you're actually typing.
+		combo_esc {
+			timeout-ms = <45>;
+			require-prior-idle-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <&kp ESC>;
+			layers = <BASE>;
+		};
+
 		// left index & middle fingers (home-row)
 		// was Ctrl+Space for duckyb's Adobe workflow.
 		// On macOS Ctrl+Space switches input source -- change or delete if unwanted.
