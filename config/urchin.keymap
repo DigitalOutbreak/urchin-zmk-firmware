@@ -105,7 +105,7 @@
 			&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P
 			&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI
 			&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-							&qt LSHIFT SPACE &mo EXT                         &sl SYM &aero AERO SPACE
+							&mo EXT &qt LSHIFT SPACE                         &sl SYM &aero AERO SPACE
 			>;
 		};
 
@@ -117,7 +117,7 @@
 			&kp N1 &kp N2    &kp N3   &kp N4   &kp N5             &kp N6    &kp N7    &kp N8  &kp N9    &kp N0
 			&kp LT &kp DLLR  &kp LPAR &kp LBRC &kp LBKT           &kp EQUAL &kp QMARK &kp SQT &kp MINUS &kp STAR
 			&kp GT &kp PRCNT &kp RPAR &kp RBRC &kp RBKT           &kp AT    &kp EXCL  &kp DQT &kp PLUS  &kp FSLH
-														&mo SYM2 &mo FNC                         &trans &trans
+														&mo FNC &mo SYM2                         &trans &trans
 			>;
 		};
 
@@ -128,7 +128,7 @@
 			&kp ESC   &kp C_PREV &kp C_PP   &kp C_NEXT &kp C_PAUSE     &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
 			&sk LALT  &sk LGUI   &sk LSHIFT &sk LCTRL  &kp RALT        &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL
 			&kp LG(Z) &kp LG(X)  &kp LG(C)  &kp TAB    &kp LG(V)       &kp LA(BSPC) &kp BSPC &trans   &trans    &trans
-																		&kp LCTRL &trans                         &mo FNC &kp ENTER
+																		&trans &kp LCTRL                         &mo FNC &kp ENTER
 			>;
 		};
 
