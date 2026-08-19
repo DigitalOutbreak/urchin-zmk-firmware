@@ -153,7 +153,7 @@
 		// and hjkl becomes move-window instead of focus. Same pairing
 		// Aerospace itself uses, so there's one rule to remember, not two.
 		spare_layer {
-			label = "Space";
+			label = "Aero";
 			bindings = <
 			// workspaces 1-5                                              workspaces 6-0
 			&kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5)         &kp LA(N6) &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LA(N0)
