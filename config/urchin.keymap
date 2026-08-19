@@ -76,13 +76,39 @@
 			key-positions = <30 31>;
 			bindings = <&mo SETTINGS>;
 		};
-		// left index & middle fingers (home-row)
-		// was Ctrl+Space for duckyb's Adobe workflow.
-		// On macOS Ctrl+Space switches input source -- change or delete if unwanted.
-		combo_ctrl_space {
-			timeout-ms = <200>;
+		// --- quality of life combos ---
+		// Tight timeout-ms means both keys must land almost together,
+		// which is what stops normal typing rolls from firing them.
+		// require-prior-idle-ms refuses the combo if you were mid-word.
+		// These two numbers are the tuning dials: raise them if you get
+		// misfires, lower them if the combo feels like it's ignoring you.
+
+		// J + K -> Escape. Classic vim mapping; "jk" is a rare digraph.
+		combo_esc {
+			timeout-ms = <45>;
+			require-prior-idle-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <&kp ESC>;
+			layers = <BASE>;
+		};
+
+		// M + , -> Tab. Right hand, out of the way, good for autocomplete.
+		combo_tab {
+			timeout-ms = <45>;
+			require-prior-idle-ms = <50>;
+			key-positions = <26 27>;
+			bindings = <&kp TAB>;
+			layers = <BASE>;
+		};
+
+		// D + F -> sticky Ctrl. Turns vim's Ctrl-chords (Ctrl-D, Ctrl-U,
+		// Ctrl-W, Ctrl-R) from a three-step layer trip into two taps.
+		// Replaces duckyb's Ctrl+Space Adobe shortcut, which lived here.
+		combo_sticky_ctrl {
+			timeout-ms = <50>;
+			require-prior-idle-ms = <100>;
 			key-positions = <12 13>;
-			bindings = <&kp LC(SPACE)>;
+			bindings = <&sk LCTRL>;
 			layers = <BASE>;
 		};
 	};
