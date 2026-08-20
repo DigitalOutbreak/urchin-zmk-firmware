@@ -181,7 +181,8 @@
 			&kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LA(N7) &kp LA(N8)         &kp LA(N0) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
 			// dashboard, then the four you live in                       focus, on the real h j k l keys
 			&kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N9)      &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
-			&kp LA(V) &none &none &none &none                              &none &none &none &none &none
+			// browser tabs on the right hand, since this is the navigate-my-computer layer
+			&kp LA(V) &none &none &none &none                              &kp LG(T) &kp LG(LS(A)) &kp LG(LBKT) &kp LG(RBKT) &kp LG(W)
 			// thumbs stay transparent so Shift still reaches through
 									&trans &trans                         &trans &trans
 			>;
