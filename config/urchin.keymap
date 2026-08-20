@@ -194,7 +194,7 @@
 			&kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N9)      &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
 			// browser tabs on the right hand, since this is the navigate-my-computer layer
 			// left hand: herdr (prefix, then tab prev/next)  |  right hand: browser tabs
-			&kp LA(V) &kp LC(B) &kp LC(LA(H)) &kp LC(LA(L)) &none         &kp LG(T) &kp LG(LS(A)) &kp LG(LBKT) &kp LG(RBKT) &kp LG(W)
+			&kp LA(V) &kp LC(B) &kp LC(LA(H)) &kp LC(LA(L)) &none         &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
 			// thumbs stay transparent so Shift still reaches through
 									&trans &trans                         &trans &trans
 			>;
