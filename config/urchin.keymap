@@ -98,6 +98,17 @@
 			layers = <BASE>;
 		};
 
+		// J + L -> Enter. Right hand only, so Enter no longer needs the left
+		// thumb for the Mods layer. Index + ring skipping the middle: an easy
+		// pinch, and "jl" appears 8 times in a 236k-word dictionary.
+		combo_enter {
+			timeout-ms = <45>;
+			require-prior-idle-ms = <50>;
+			key-positions = <16 18>;
+			bindings = <&kp ENTER>;
+			layers = <BASE>;
+		};
+
 		// left index & middle fingers (home-row)
 		// was Ctrl+Space for duckyb's Adobe workflow.
 		// On macOS Ctrl+Space switches input source -- change or delete if unwanted.
@@ -182,7 +193,8 @@
 			// dashboard, then the four you live in                       focus, on the real h j k l keys
 			&kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N9)      &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
 			// browser tabs on the right hand, since this is the navigate-my-computer layer
-			&kp LA(V) &none &none &none &none                              &kp LG(T) &kp LG(LS(A)) &kp LG(LBKT) &kp LG(RBKT) &kp LG(W)
+			// left hand: herdr (prefix, then tab prev/next)  |  right hand: browser tabs
+			&kp LA(V) &kp LC(B) &kp LC(LA(H)) &kp LC(LA(L)) &none         &kp LG(T) &kp LG(LS(A)) &kp LG(LBKT) &kp LG(RBKT) &kp LG(W)
 			// thumbs stay transparent so Shift still reaches through
 									&trans &trans                         &trans &trans
 			>;
