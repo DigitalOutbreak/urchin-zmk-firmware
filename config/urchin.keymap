@@ -135,7 +135,7 @@
 		ext_layer {
 			label = "Mods";
 			bindings = <
-			&sk LALT  &kp C_PREV &kp C_PP   &kp C_NEXT &kp C_PAUSE     &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
+			&sk LALT  &kp LG(W)  &kp LG(LS(A)) &kp LG(LS(T)) &kp LG(T)  &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
 			&kp ESC   &sk LGUI   &sk LSHIFT &sk LCTRL  &kp RALT        &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL
 			&kp LG(Z) &kp LG(X)  &kp LG(C)  &kp TAB    &kp LG(V)       &kp LA(BSPC) &kp BSPC &trans   &trans    &trans
 																		&trans &kp LCTRL                         &mo FNC &kp ENTER
@@ -148,7 +148,7 @@
 			bindings = <
 			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
 			&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-			&none &none &none &none &none				          &none &none &none &none &none
+			&kp C_PREV &kp C_PP &kp C_NEXT &kp C_PAUSE &none          &none &none &none &none &none
 							  &none &none                         &none &none
 			>;
 		};
@@ -167,7 +167,7 @@
 		// Aerospace window management. Hold the dedicated left inner thumb.
 		// Mirrors ~/.aerospace.toml, which uses alt as its modifier.
 		//
-		// Hold Shift (left inner thumb) with any of these and you get the
+		// Hold Shift (right inner Space/Shift thumb) with any of these and you get the
 		// alt-shift variant for free: numbers become move-node-to-workspace,
 		// and hjkl becomes move-window instead of focus. Same pairing
 		// Aerospace itself uses, so there's one rule to remember, not two.
@@ -176,10 +176,10 @@
 			bindings = <
 			// Aerospace shortcuts are shifted: alt-` = ws1, alt-1 = ws2, ... alt-9 = ws0.
 			// Labels below describe the destination workspace, not the number sent.
-			&none     &kp LA(N8)    &kp LA(N4) &kp LA(N5) &kp LA(N6)     &kp LA(N9) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
-			&kp LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)     &kp LA(H)  &kp LA(J)     &kp LA(K)     &kp LA(L)     &none
-			// Low-use workspaces and existing left utilities fill the bottom row.
-			&kp LA(V) &kp LA(N7) &kp LA(N9) &kp LC(LA(H)) &kp LC(LA(L))  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
+			&none     &kp LA(N8)    &kp LA(N4) &kp LA(N5) &kp LA(N6)     &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
+			&kp LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)     &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
+			// Low-use workspaces and existing left utilities; right bottom holds layout/resize.
+			&kp LA(V) &kp LA(N7) &kp LA(N9) &kp LC(LA(H)) &kp LC(LA(L))  &kp LA(N9) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
 			// thumbs stay transparent so Shift still reaches through
 									&trans &trans                         &trans &trans
 			>;
