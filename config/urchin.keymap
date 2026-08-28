@@ -168,7 +168,7 @@
 			&kp LG(LS(A)) &kp LG(W) &kp LG(L) &kp LG(R) &kp LG(T)  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LA(N5)
 			&aero_dual LSHIFT ESC &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)  &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp ENTER
 			// Frequent actions replace retired workspace 7/8 positions on the left bottom row.
-			&kp LA(N4) &kp LG(SPACE) &kp ENTER &aero_dual LCTRL LC(B) &kp LA(N8)       &kp LA(N9) &kp BSPC &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
+			&kp LA(N4) &kp LA(SPACE) &kp ENTER &aero_dual LCTRL LC(B) &kp LA(N8)       &kp LA(N9) &kp BSPC &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
 			// Keep all thumbs transparent. Contextual thumb overrides caused the
 			// right thumb row to become unusable in the unified Aero revision.
 									&trans &trans                         &trans &trans
