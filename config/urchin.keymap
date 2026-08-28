@@ -167,7 +167,7 @@
 		// Aerospace window management. Hold the dedicated left inner thumb.
 		// Mirrors ~/.aerospace.toml, which uses alt as its modifier.
 		//
-		// Hold Shift (right inner Space/Shift thumb) with any of these and you get the
+		// Hold Shift (right outer thumb while Aero is active) and you get the
 		// alt-shift variant for free: numbers become move-node-to-workspace,
 		// and hjkl becomes move-window instead of focus. Same pairing
 		// Aerospace itself uses, so there's one rule to remember, not two.
@@ -181,8 +181,9 @@
 			&kp LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)      &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
 			// Low-use workspaces 5–9 fill the left bottom row; right bottom holds 0 and layout/resize.
 			&kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LA(N7) &kp LA(N8)       &kp LA(N9) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
-			// thumbs stay transparent so Shift still reaches through
-									&trans &trans                         &trans &trans
+			// While Aero is active, right inner adds Ctrl for Herdr and right outer
+			// adds Shift for moving AeroSpace windows. Their base behaviors are unchanged.
+									&trans &trans                         &kp LCTRL &kp LSHIFT
 			>;
 		};
 		// Used to change the keyboard's settings.
