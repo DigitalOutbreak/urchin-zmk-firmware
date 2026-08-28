@@ -165,7 +165,7 @@
 			// Aerospace shortcuts are shifted: alt-` = ws1, alt-1 = ws2, ... alt-9 = ws0.
 			// Labels below describe the destination workspace, not the number sent.
 			// Left top keeps mnemonic Chrome positions: W closes and T opens a tab.
-			&kp LG(LS(A)) &kp LG(W) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(T)  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LA(N5)
+			&kp LG(LS(A)) &kp LG(W) &kp LG(L) &kp LG(R) &kp LG(T)  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LA(N5)
 			&aero_a LSHIFT ESC &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)  &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp ENTER
 			// Frequent actions replace retired workspace 7/8 positions on the left bottom row.
 			&kp LA(N4) &kp LG(SPACE) &kp ENTER &kp LC(B) &kp LA(N8)       &kp LA(N9) &kp BSPC &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
