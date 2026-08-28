@@ -174,12 +174,12 @@
 		aero_layer {
 			label = "Aero";
 			bindings = <
-			// Left hand: frequent 1–4 on the home row, no workspace on a pinky.
-			// Right hand remains unchanged: layout/resize, HJKL focus, browser tabs.
-			&kp LA(GRAVE) &kp LA(N9) &kp LA(N5) &kp LA(N6) &kp LA(N7)     &kp LA(N0) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
-			&kp LC(B)     &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4)     &kp LA(H)  &kp LA(J)     &kp LA(K)     &kp LA(L)     &none
+			// Aerospace shortcuts are shifted: alt-` = ws1, alt-1 = ws2, ... alt-9 = ws0.
+			// Labels below describe the destination workspace, not the number sent.
+			&none     &kp LA(N8)    &kp LA(N4) &kp LA(N5) &kp LA(N6)     &kp LA(N9) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
+			&kp LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)     &kp LA(H)  &kp LA(J)     &kp LA(K)     &kp LA(L)     &none
 			// Low-use workspaces and existing left utilities fill the bottom row.
-			&kp LA(V) &kp LA(N8) &kp LA(N0) &kp LC(LA(H)) &kp LC(LA(L))  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
+			&kp LA(V) &kp LA(N7) &kp LA(N9) &kp LC(LA(H)) &kp LC(LA(L))  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
 			// thumbs stay transparent so Shift still reaches through
 									&trans &trans                         &trans &trans
 			>;
