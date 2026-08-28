@@ -31,6 +31,17 @@
 
 / {
 	behaviors {
+		// On Aero, tap A for the Herdr Ctrl-B prefix or hold A to add Shift.
+		prefix_shift: prefix_shift {
+			compatible = "zmk,behavior-hold-tap";
+			label = "PREFIX_SHIFT";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <175>;
+			bindings = <&kp>, <&kp>;
+		};
+
 		// Preserve the proven right-inner Space behavior from the known-good firmware.
 		aero: aero_tap {
 			compatible = "zmk,behavior-hold-tap";
@@ -165,7 +176,7 @@
 			// Labels below describe the destination workspace, not the number sent.
 			// Left top keeps mnemonic Chrome positions: W closes and T opens a tab.
 			&kp LG(LS(A)) &kp LG(W) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(T)  &kp LG(T) &kp LG(LS(A)) &kp LC(LS(TAB)) &kp LC(TAB) &kp LG(W)
-			&kp LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)      &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
+			&prefix_shift LSHIFT LC(B) &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)  &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none
 			// Low-use workspaces 5–9 fill the left bottom row; right bottom holds 0 and layout/resize.
 			&kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LA(N7) &kp LA(N8)       &kp LA(N9) &kp LA(SLASH) &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
 			// Keep all thumbs transparent. Contextual thumb overrides caused the
