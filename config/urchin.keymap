@@ -163,13 +163,17 @@
 		aero_layer {
 			label = "Aero";
 			bindings = <
-			// Aerospace shortcuts are shifted: alt-` = ws1, alt-1 = ws2, ... alt-9 = ws0.
+			// Aerospace keys follow the SketchyBar icon order, not the workspace IDs:
+			// alt-` = ws1 Dev, alt-1 = ws2 Browser, alt-2 = ws3 Chat, alt-3 = ws4 Mail,
+			// alt-4 = ws5 Music, alt-5 = ws6 Production, alt-8 = ws0 Files,
+			// alt-9 = ws9 Settings.
+			// Right top row: Y = Production, U = Files, P = Settings.
 			// Labels below describe the destination workspace, not the number sent.
 			// Left top keeps mnemonic Chrome positions: W closes and T opens a tab.
-			&kp TAB &kp LG(W) &kp LG(L) &kp LG(R) &kp LG(T)  &kp LA(N9) &kp LA(N4) &kp LC(LS(TAB)) &kp LC(TAB) &kp LA(N5)
+			&kp TAB &kp LG(W) &kp LG(L) &kp LG(R) &kp LG(T)  &kp LA(N5) &kp LA(N8) &kp LC(LS(TAB)) &kp LC(TAB) &kp LA(N9)
 			&aero_dual LSHIFT ESC &kp LA(GRAVE) &kp LA(N1) &kp LA(N2) &kp LA(N3)  &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp ENTER
-			// Frequent actions replace retired workspace 7/8 positions on the left bottom row.
-			&kp LG(LS(A)) &kp LA(SPACE) &kp ENTER &aero_dual LCTRL LC(B) &kp LA(N8)       &kp LA(BSPC) &kp BSPC &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
+			// B holds Music: alt-4 both focuses ws5 and launches/focuses Spotify.
+			&kp LG(LS(A)) &kp LA(SPACE) &kp ENTER &aero_dual LCTRL LC(B) &kp LA(N4)       &kp LA(BSPC) &kp BSPC &kp LA(COMMA) &kp LA(MINUS) &kp LA(EQUAL)
 			// Keep all thumbs transparent. Contextual thumb overrides caused the
 			// right thumb row to become unusable in the unified Aero revision.
 									&trans &trans                         &trans &trans
